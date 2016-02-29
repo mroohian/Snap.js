@@ -18,11 +18,17 @@ html, body {
   z-index: 2;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+  /*
+  Fix for divs with position:fixed inside the snap-content scroll problem:
+  http://stackoverflow.com/questions/15194313/webkit-css-transform3d-position-fixed-issue
+
+  More info: http://meyerweb.com/eric/thoughts/2011/09/12/un-fixing-fixed-elements-with-css-transforms/
   -webkit-transform: translate3d(0, 0, 0);
      -moz-transform: translate3d(0, 0, 0);
       -ms-transform: translate3d(0, 0, 0);
        -o-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
+  */
 }
 
 .snap-drawers {
